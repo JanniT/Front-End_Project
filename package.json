@@ -1,0 +1,14 @@
+{
+  "name": "front-end_project",
+  "version": "1.0.0",
+  "description": "A project for a front-end course",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Janni",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
