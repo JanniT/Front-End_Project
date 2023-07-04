@@ -1,40 +1,12 @@
-$primary-color: #ffffff;
-$secondary-color: #333535;
-$third-color: #69d9d2;
-$show-home-image: true; 
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.5;
-
-@mixin easeOut {
-    transition: all 0.5s ease-in;
-}
-
-@mixin background {
-    @if $show-home-image {
-        &#bg-img {
-            background: $home-image;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        .overlay {
-            //Covering the whole body
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: rgba($secondary-color, $background-opacity);
-        }
-    }
-}
+@import 'config';
+@import 'menu';
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    @include background();
+    @include background;
     background: $primary-color;
     color: $primary-color;
     height: 100%;
@@ -87,7 +59,8 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
+    // height: 100%;
+    min-height: calc(100vh - 60px);
 
     .icons {
         margin-bottom: 1rem;
@@ -98,7 +71,6 @@ main {
 
             &:hover {
                 color: $third-color;
-                text-decoration: underline;
                 @include easeOut();
             }
         }
@@ -113,8 +85,17 @@ main {
     }
 
     .consulting {
+        grid-area: image;
         opacity: 0.9; 
         margin-bottom: 1rem;
+        //Making the picture responsive 
+        flex: 1 1 auto;
+        padding: 0 30px;
+        text-align: center;
+    }
+    
+    img {
+        max-width: 100%;
     }
 }
 
