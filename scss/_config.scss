@@ -27,14 +27,21 @@ $background-opacity: 0.5;
             z-index: -1;
             background: rgba($secondary-color, $background-opacity);
         }
+
+        &#about-page,
+        &#contact {
+            background: rgba($secondary-color, 0.8);
+            background-attachment: fixed;
+            height: 100vh;
+        }
     }
 }
 
 // Set text color
 @function set-text-color($color) {
     @if (lightness($color) > 40) {
-        @return $secondary-color;
-    } @else {
         @return $primary-color;
+    } @else {
+        @return $secondary-color;
     }
 }
