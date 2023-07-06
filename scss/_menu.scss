@@ -45,7 +45,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.95;
+    opacity: 0.99;
     visibility: hidden;
 
     &.show {
@@ -88,14 +88,6 @@
         &.show {
             transform: translate3d(0,0,0);
         }
-
-        .portrait {
-            width: 250px;
-            height: 250px;
-            background: url('../img/menu.jpg');
-            border-radius: 10%;
-            border: solid 3px $third-color;
-        }
     }
 
     .nav-item {
@@ -111,7 +103,7 @@
     .nav-link {
         display: inline-block;
         position: relative;
-        font-size: 25px;
+        font-size: 20px;
         // text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
