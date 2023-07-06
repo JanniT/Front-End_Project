@@ -176,6 +176,43 @@ main {
     }
 }
 
+//Contact page
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+
+    div {
+        font-size: 1rem;
+        border: 3px $secondary-color solid;
+        padding: 0.5rem 2rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+        &:hover {
+            padding: 1rem 1.5rem;
+            background: rgba(lighten($secondary-color, 2), 0.6);
+            color: set-text-color($primary-color);
+            span {
+                color: ($third-color);
+            }
+        }
+    }
+}
+
+.contact-image1 {
+    grid-area: image;
+    opacity: 0.9; 
+    margin-bottom: 1rem;
+    //Making the picture responsive 
+    flex: 1 1 auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+
 #main-footer {
     text-align: center;
     padding: 0.2rem;

@@ -105,7 +105,7 @@ body {
     height: 100%;
     z-index: -1;
     background: rgba(51, 53, 53, 0.5); }
-  body#about-page, body#contact {
+  body#about-page, body#contact-page {
     background: url(../img/aboutPage.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -185,7 +185,7 @@ main {
     height: 100%;
     z-index: -1;
     background: rgba(51, 53, 53, 0.5); }
-  .about-info#about-page, .about-info#contact {
+  .about-info#about-page, .about-info#contact-page {
     background: url(../img/aboutPage.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -236,6 +236,33 @@ main {
     background: rgba(56, 58, 58, 0.3);
     padding: 0.5rem;
     border-bottom: #333535 1px solid; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem; }
+  .boxes div {
+    font-size: 1rem;
+    border: 3px #333535 solid;
+    padding: 0.5rem 2rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 1rem 1.5rem;
+      background: rgba(56, 58, 58, 0.6);
+      color: #ffffff; }
+      .boxes div:hover span {
+        color: #69d9d2; }
+
+.contact-image1 {
+  grid-area: image;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  flex: 1 1 auto;
+  padding: 0 30px;
+  text-align: center; }
 
 #main-footer {
   text-align: center;
