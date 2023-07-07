@@ -8,7 +8,7 @@ To run this website
 
 The website is running here: https://jannit.github.io/Front-End_Project/index.html
 
-Here is a link to a video of the website: 
+Here is a link to a video of the website: https://youtu.be/_qurjAuHsoU
 
 The learning diary can be found in the main folder.
 
