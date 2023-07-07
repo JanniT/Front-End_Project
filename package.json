@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "A project for a front-end course",
   "main": "index.js",
+  "homepage": "https://jannit.github.io/Front-End_Project/",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Janni",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "node-sass": "^9.0.0"
   }
 }

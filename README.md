@@ -6,6 +6,10 @@ To run this website
 2. Go to dist/index.html 
 3. Run it with live server
 
-The website is running here: 
+The website is running here: https://jannit.github.io/Front-End_Project/index.html
+
+Here is a link to a video of the website: 
+
+The learning diary can be found in the main folder.
 
 Janni Timoskainen
